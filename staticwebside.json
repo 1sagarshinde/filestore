@@ -4,7 +4,7 @@
     "parameters": {
 	    "staticwebsitestracc": {           
             "type": "string",
-            "defaultValue": "igqastaticstorage7",
+            "defaultValue": "[concat(uniqueString(resourceGroup().id),'spastorage')]",
             "metadata": {
                 "description": "Name of the static web site storage account"
             }
