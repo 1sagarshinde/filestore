@@ -45,5 +45,11 @@
                 "accessTier": "Hot"
             }
         }
-	]
+	],
+	"outputs": {
+       "staticwebsitestracc" : {
+           "type": "string",
+           "value": "[concat(resourceGroup().name,'spastorage')]"
+       }
+    }
 }
