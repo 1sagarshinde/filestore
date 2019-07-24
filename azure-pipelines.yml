@@ -12,7 +12,7 @@ pool:
 steps:
 - task: AzureResourceGroupDeployment@2
   inputs:
-    azureSubscription: 'demo1'
+    azureSubscription: 'demoarm'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'devqa'
     location: 'West US'
