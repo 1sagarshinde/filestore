@@ -17,7 +17,7 @@ steps:
     resourceGroupName: 'devqa'
     location: 'West US'
     templateLocation: 'Linked artifact'
-    csmFile: 'filestore/staticwebside.json'
+    csmFile: 'filestore/data.json'
     deploymentMode: 'Incremental'
 
 - script: |
