@@ -1,14 +1,5 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-trigger:
-- master
-
-pool:
-  vmImage: 'ubuntu-latest'
-
+# Azure resource group deployment
+# Deploy an Azure Resource Manager (ARM) template to a resource group and manage virtual machines
 steps:
 - task: AzureResourceGroupDeployment@2
   inputs:
@@ -17,10 +8,5 @@ steps:
     resourceGroupName: 'devqa'
     location: 'West US'
     templateLocation: 'Linked artifact'
-    csmFile: 'filestore/data.json'
+    csmFile: 'https://github.com/1sagarshinde/filestore/blob/master/staticwebside.json'
     deploymentMode: 'Incremental'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
