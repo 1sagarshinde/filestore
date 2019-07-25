@@ -9,4 +9,5 @@ steps:
     location: 'West US'
     templateLocation: 'Linked artifact'
     csmFile: 'https://github.com/1sagarshinde/filestore/blob/master/staticwebside.json'
+    csmParametersFile: 'https://github.com/1sagarshinde/filestore/blob/master/data1.json'
     deploymentMode: 'Incremental'
