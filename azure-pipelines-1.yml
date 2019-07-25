@@ -17,6 +17,7 @@ steps:
     resourceGroupName: 'devqa'
     location: 'West US'
     templateLocation: 'Linked artifact'
+    Options: linked Artifact, https://github.com/1sagarshinde/filestore/blob/master/staticwebside.json
     csmFile: 'filestore/staticwebside.json'
     deploymentMode: 'Incremental'
 
